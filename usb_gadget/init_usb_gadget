@@ -180,6 +180,7 @@ cp "$D" "${MOUSE_ABSOLUTE_FUNCTIONS_DIR}/report_desc"
 CONFIG_INDEX=1
 CONFIGS_DIR="configs/c.${CONFIG_INDEX}"
 mkdir -p "$CONFIGS_DIR"
+echo 0x60 > "${CONFIGS_DIR}/bmAttributes"
 echo 250 > "${CONFIGS_DIR}/MaxPower"
 
 CONFIGS_STRINGS_DIR="${CONFIGS_DIR}/strings/0x409"
